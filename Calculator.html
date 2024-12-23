@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+
+<body>
+
+  <label for="fname">Enter Value 1:</label>
+  <input type="number" id="val1"/>
+  <br><br>
+  <label for="lname">Enter Value 2:</label>
+  <input type="number" id="val2"/>
+  <br><br>
+  
+
+<button type="button" onclick="getAdd()">Calculator</button>
+<script type="text/javascript">
+    function getAdd(){
+    // Fecth the value of input with id val1
+    const num1 = Number(document.getElementById("val1").value);
+    // Fetch the value of input with id val2
+    const num2 = Number(document.getElementById("val2").value);
+    // Const number meaning it is staying stagnat and not changing
+    const add = num1 + num2;
+    //it allows you to display information such as messages or errors
+    console.log(add);
+    // Sample modal alert
+    alert(add);
+    }
+    
+
+</script>
+
+
+</body>
+
+</html>
